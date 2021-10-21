@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #1E2D3B;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.25rem;
+    background-color:#2E3A46
+     /* $headerColor; */
+    
+}
+select{
+min-width: 10rem;
+padding: .625rem;
+}
+.logo{
+    height: 80%;
+};
+/* ALBUM  */
+.album{
+    background-color: #2E3A46;
+    height: 350px;
+    color: white;
+}
+.album h3{
+    font-size: 30px;
+
+}
+.album img{
+    max-width: 150px;
+    height: 180px;
+}
+.container{
+    max-width: 75rem;
+}
