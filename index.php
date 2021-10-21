@@ -29,31 +29,31 @@ require __DIR__ . "/database.php"
         <main>
         <div class="container my-5"> 
     
-        
-        <div class="row row-cols-5">
-                    <div class="album text-center">
-                    
-                    <div class="container">
-                        <?php foreach($database as $disco) {?>
-                        <img class="py-3 " src= "<?php echo $disco['poster']?>" alt="info.title">
-                        <h3><?php echo $disco['title']?></h3>
-                        <div class="text_author">
-                        <?php echo $disco['author']?>
-                        </div>
-                        <div><?php echo $disco['year']?></div>
-                        </div>
-                    
-                        <?php }?>
-                    
-                    </div>
-                <!-- <div class="col mb-3" v-for= "(elm, index) in musicFiltered" :key="index"> 
-                    <Album :info="elm" />
-                </div> -->
                 
-        </div>
+                <div class="row row-cols-5">
+                             <?php foreach($database as $disco) {?>
+                            <div class="album text-center">
+                            
+                            <div class="container">
+                                <img class="py-3 " src= "<?php echo $disco['poster']?>" alt="info.title">
+                                <h3><?php echo $disco['title']?></h3>
+                                <div class="text_author">
+                                <?php echo $disco['author']?>
+                                </div>
+                                <div><?php echo $disco['year']?></div>
+                                </div>
+                                
+                                
+                            </div>
+                            <?php }?>
+                        <!-- <div class="col mb-3" v-for= "(elm, index) in musicFiltered" :key="index"> 
+                            <Album :info="elm" />
+                        </div> -->
+                        
+                </div>
             
 
-            </div>
+        </div>
         </main>
     </body>
 </html>
