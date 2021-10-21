@@ -26,9 +26,9 @@ padding: .625rem;
 };
 /* ALBUM  */
 .album{
-    background-color: #2E3A46;
     height: 350px;
-    color: white;
+    /* background-color: #2E3A46; */
+    /* color: white; */
 }
 .album h3{
     font-size: 30px;
