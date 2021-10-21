@@ -6,6 +6,7 @@
 }
 body{
     background-color: #1E2D3B;
+
 }
 header{
     display: flex;
@@ -31,6 +32,10 @@ padding: .625rem;
 }
 .album h3{
     font-size: 30px;
+    color: white;
+}
+.text_author{
+    color: white;
 
 }
 .album img{

@@ -1,5 +1,5 @@
-Prima Milestone:
-Stampiamo i dischi solo con l’utilizzo di PHP, che stampa direttamente i dischi in pagina: al caricamento della pagina ci saranno tutti i dischi.
+<!-- Prima Milestone:
+Stampiamo i dischi solo con l’utilizzo di PHP, che stampa direttamente i dischi in pagina: al caricamento della pagina ci saranno tutti i dischi. -->
 <?php 
 require __DIR__ . "/database.php"
 
@@ -31,16 +31,16 @@ require __DIR__ . "/database.php"
     
                 
                 <div class="row row-cols-5">
-                             <?php foreach($database as $disco) {?>
-                            <div class="album text-center">
+                            <?php foreach($database as $disco) {?>
+                            <div class=" text-center">
                             
-                            <div class="container">
-                                <img class="py-3 " src= "<?php echo $disco['poster']?>" alt="info.title">
+                            <div class="container album" >
+                                <img class="py-3 " src= "<?php echo $disco['poster']?>" alt="<?php echo $disco['title']?>">
                                 <h3><?php echo $disco['title']?></h3>
                                 <div class="text_author">
                                 <?php echo $disco['author']?>
-                                </div>
                                 <div><?php echo $disco['year']?></div>
+                                </div>
                                 </div>
                                 
                                 
