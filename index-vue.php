@@ -12,12 +12,12 @@
         <div id="root">
         <header>
             <img src="spotify-logo.png" alt="" class=" logo m-2">
-            <select class="mx-5">   
+            <select v-model = "selezionaGenere" class="mx-5">   
             <option value="">Tutti i generi</option>
-            <option value="pop">Pop</option>
-            <option value="rock">Rock</option>
+            <option v-for="(genere, index) in generi " :value="genere">{{genere}}</option>
+            <!-- <option value="rock">Rock</option>
             <option value="jazz">Jazz</option>
-            <option value="metal">Metal</option>
+            <option value="metal">Metal</option> -->
 
 
             </select>
@@ -30,7 +30,7 @@
     
                     <div class="row row-cols-5">
 
-                                <div v-for ="(disco, index) in dischi" :key="index" class=" text-center">
+                                <div v-for ="(disco, index) in musicFiltered" :key="index" class=" text-center">
                                 
                                     <div class="container album" >
                                         <img class="py-3 " :src= "disco.poster" alt="disco.title">
